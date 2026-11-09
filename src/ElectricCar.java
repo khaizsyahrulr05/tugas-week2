@@ -1,0 +1,25 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package Tugas_Week2_Kelompok2;
+
+/**
+ *
+ * @author finde
+ */
+public class ElectricCar extends Car {
+    public ElectricCar(String vehicleNumber, String brand, double pricePerDay) {
+        super(vehicleNumber, brand, pricePerDay);
+    }
+
+    @Override
+    public double calculateRentalPrice(int days) {
+        return super.calculateRentalPrice(days) + 150000;
+    }
+
+    @Override
+    public String getVehicleType() {
+        return "Electric Car";
+    }
+}
